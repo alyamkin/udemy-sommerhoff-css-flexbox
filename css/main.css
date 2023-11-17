@@ -88,3 +88,143 @@
 /* .container div:nth-child(3) { */
 /* flex-grow: 2; */
 /* } */
+
+/* Practice grid layout solution 1 */
+
+/* .grid {
+  display: flex;
+}
+
+.gutters {
+  margin: 0 -10px 0 0;
+}
+
+.gutters:last-of-type .cell {
+  margin-bottom: 0;
+}
+
+.gutters > .cell {
+  margin: 0 10px 10px 0;
+}
+
+.cell {
+  flex: 1;
+}
+
+.cell > div {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  padding: 10px;
+} */
+
+/* Practice grid layout solution 2 */
+/* .gallery {
+  width: 500px;
+} */
+
+/* .grid {
+  display: flex;
+}
+
+.gitters {
+  margin: -10px 0 10px -10px;
+}
+
+.gutters > .cell {
+  padding: 10px 0 0 10px;
+}
+
+.cell > div {
+  background-color: rgba(255, 255, 255, 0.7);
+  height: 100%;
+}
+
+.half {
+  flex-basis: 50%;
+}
+
+.third {
+  flex-basis: 33.333%;
+}
+
+.fourth {
+  flex-basis: 25%;
+} */
+
+/* Practice vertical alignment 3 */
+
+/* .vcenter {
+  display: flex;
+  border: 1px solid #fff;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vcenter p {
+  margin: 0;
+} */
+
+/* Practice Media Object 4 */
+
+/* .media {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.figure {
+  flex: 1 1 30%;
+  align-self: flex-start;
+  order: 0;
+}
+
+.media-body {
+  flex: 1 1 70%;
+}
+
+.media p {
+  margin: 0 10px 20px 10px;
+} */
+
+/* Practice Holly Grain 5 */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  flex-grow: 1;
+}
+
+#content {
+  flex: 4 1 0%;
+}
+
+#secondary {
+  flex: 1 1 0%;
+  order: -1;
+}
+
+#tertiary {
+  flex-basis: 200px;
+  flex: 1 1 0%;
+}
+
+#header,
+#footer {
+  text-align: center;
+  padding: 20px;
+}
+
+#main * {
+  padding: 20px;
+  border: 1px solid #fff;
+}
